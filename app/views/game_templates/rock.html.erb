@@ -35,70 +35,81 @@
 </style>
 
 
-<div class="table">
-  <div class ="tr">
-    <div class="td-col-4">
-      1
+<div class="container">
+  <div class ="row">
+    <div class="col-md-4">
+      <a href="/rock" class="btn btn-primary btn-block">
+        <i class="far fa-hand-rock fa-fw"></i>
+        Play Rock
+      </a>
     </div>
     
-    <div class="td-col-4">
-      2
+    <div class="col-md-4">
+      <a href="/paper" class="btn btn-outline-info btn-block btn-lg">
+        <i class="far fa-hand-paper fa-fw"></i>
+        Play Paper
+      </a>
     </div>
     
-    <div class="td-col-4">
-      3
-    </div>
-    
-  <div class = "tr">
-    <div class="td-col-6">
-      4
-    </div>    
-    
-    <div class="td-col-6">
-      5
+    <div class="col-md-4">
+      <a href="/scissors" class="btn btn-warning btn-block btn-sm">
+        <i class="far fa-hand-scissors fa-fw"></i>
+        Play Scissors
+      </a>
     </div>
   </div>
-    
-    
+  
+    <div class = "row">
+      <div class="col-md-6">
+        <div class="card border-success mb-3">
+          <div class="card-body text-success">
+        <h5 class="card-title">We played rock!</h5>
+      <p class="card-text"><i class="far fa-hand-rock fa-10x"></i></p>
+    </div>
+
+
+</div>
+<div class="card border-danger mb-3" style="max-width: 18rem;">
+  <div class="card-header">Header</div>
+  <div class="card-body text-danger">
+    <h5 class="card-title">Danger card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
 </div>
+  
+  
+  
+  
+  
+  
+  
 
+      
 
-
-<a href="/rock">
-  <i class="far fa-hand-rock fa-fw"></i>
-
-  Play Rock
-</a>
-
-<a href="/paper">
-  <i class="far fa-hand-paper fa-fw"></i>
-
-  Play Paper
-</a>
-
-<a href="/scissors">
-  <i class="far fa-hand-scissors fa-fw"></i>
-
-  Play Scissors
-</a>
-
-<h2>We played rock!</h2>
-
-<p>
-  <i class="far fa-hand-rock fa-10x"></i>
-</p>
-
-<h2>They played <%= @comp_move %>!</h2>
-
-<p>
-  <i class="far fa-hand-<%= @comp_move %> fa-10x"></i>
-</p>
-
-<h2>
-  We <%= @outcome %>!
-</h2>
-
-<a href="/rules">
-  Rules
-</a>
+    </div>    
+    
+  <div class="col-md-6">
+      <h2>They played <%= @comp_move %>!</h2>
+      <p>
+        <i class="far fa-hand-<%= @comp_move %> fa-10x"></i>
+      </p>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-12">
+      <h2>
+        We <%= @outcome %>!
+      </h2>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-12">
+      <a href="/rules">
+        Rules
+      </a>
+    </div>
+  </div>
+  
+</div>
